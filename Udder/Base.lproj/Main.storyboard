@@ -18,22 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Udder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgY-cx-zfm">
-                                <rect key="frame" x="138" y="75" width="98" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Udder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgY-cx-zfm">
+                                <rect key="frame" x="30" y="84" width="315" height="38.333333333333343"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fresh Milk,On Demand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hf-JP-Zph">
-                                <rect key="frame" x="98" y="151" width="179" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fresh Milk,On Demand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hf-JP-Zph">
+                                <rect key="frame" x="40" y="152.33333333333334" width="295" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="images-13" translatesAutoresizingMaskIntoConstraints="NO" id="QV8-pB-Z2P">
+                                <rect key="frame" x="0.0" y="223.33333333333331" width="375" height="554.66666666666674"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QV8-pB-Z2P" secondAttribute="bottom" id="32e-9R-ldY"/>
+                            <constraint firstItem="QV8-pB-Z2P" firstAttribute="top" secondItem="9Hf-JP-Zph" secondAttribute="bottom" constant="50" id="DiY-X2-7PH"/>
+                            <constraint firstItem="9Hf-JP-Zph" firstAttribute="top" secondItem="tgY-cx-zfm" secondAttribute="bottom" constant="30" id="G5a-7z-N9v"/>
+                            <constraint firstItem="tgY-cx-zfm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Hht-yB-v1Y"/>
+                            <constraint firstItem="tgY-cx-zfm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="IeV-sU-oDv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QV8-pB-Z2P" secondAttribute="trailing" id="TW1-N1-gvY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Hf-JP-Zph" secondAttribute="trailing" constant="40" id="W7b-hm-qnE"/>
+                            <constraint firstItem="9Hf-JP-Zph" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Zkz-gG-NhB"/>
+                            <constraint firstItem="QV8-pB-Z2P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bC1-Ga-mJ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tgY-cx-zfm" secondAttribute="trailing" constant="30" id="oFo-Ye-0bR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -42,4 +55,7 @@
             <point key="canvasLocation" x="-26.399999999999999" y="133.74384236453201"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="images-13" width="306" height="165"/>
+    </resources>
 </document>
